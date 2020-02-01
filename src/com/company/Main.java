@@ -144,7 +144,7 @@ public class Main {
         }
     }
 
-    public static void obstacle(){
+    public static String obstacle(){
         System.out.print("Do you want to place obstacle ? (yes/no) ");
         obstacle = scan.next();
 
@@ -185,7 +185,10 @@ public class Main {
                 System.out.println("ArrayX: " + arrayX[k] + " ArrayY: " + arrayY[k]);
             }
 
+
+
         } // finished obstacle
+        return obstacle;
     }
 
     public static void gridView(){
@@ -200,16 +203,16 @@ public class Main {
     public static void main(String[] args) {
 
 
-        grid();
-        obstacle();
-        gridView();
-        whichRobot();
+        //grid();
+        //obstacle();
+        //gridView();
+        //whichRobot();
 
         if(typeOfRobot.equalsIgnoreCase("Traveling")){
             travelingRobot();
         }
 
-        selectedRobot("spider");
+        //selectedRobot("spider");
 
 
         // Kendime Not: robot hareket edeceği zaman konum -1,-1 e atıyor onu düzelt.
